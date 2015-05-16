@@ -1,0 +1,52 @@
+aside {
+  font-size: .9em;
+  float: right;
+  width: $sidebarWidth;
+  border-left: 1px solid $borderColor;
+
+  .row {
+    border-top: 1px solid $borderColor;
+    .flexbox & {
+      justify-content: flex-end;
+    }
+  }
+
+  &:before {
+    content: ' ';
+    display: block;
+    border: $standardMargin / 2 solid lighten($textColor, 70%);
+    height: 280px;
+    background: url(../images/strawberry.jpg) no-repeat;
+  }
+
+  .sidebar {
+    float:right;
+    width:50%;
+    padding:$standardMargin / 2;
+    border-left: 1px solid lighten($borderColor, 10%);
+    
+    &:last-child {
+      border-left: 0;
+    }
+    &:first-child {
+      border-left: 1px solid lighten($borderColor, 10%);
+    }
+
+    > p:first-child {
+      margin-top: 0;
+      font-size: 1.1em;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      line-height: 1.2;
+      margin:.5em 0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>{% if page.title %}{{ page.title | append: ' - ' | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <link rel="stylesheet" href="{{ '/styles/style.css' | prepend: site.assets | prepend: site.baseurl }}"/>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <script type="application/javascript" src="{{ '/scripts/modernizr.min.js' | prepend: site.assets | prepend: site.baseurl }}"></script>
+</head>

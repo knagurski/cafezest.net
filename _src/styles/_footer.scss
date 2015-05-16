@@ -1,0 +1,27 @@
+footer {
+  color: $footerTextColor;
+  overflow: hidden;
+  font-size: .66em;
+  font-style: italic;
+  padding-top: $standardMargin;
+  border-top: 1px solid $borderColor;
+
+  a {
+    color: $footerTextColor;
+  }
+
+  .contact {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      margin-left: .5em;
+    }
+  }
+
+  address, .contact {
+    float: right;
+    clear: both;
+  }
+}

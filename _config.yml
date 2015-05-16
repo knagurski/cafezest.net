@@ -1,0 +1,17 @@
+# Site settings
+title: Cafe Zest - Cafe and Outside Catering in Derry/Londonderry
+email: info@cafezest.net
+description: >
+  Situated in the commercial heart of the Waterside in the historic city of
+  Derry/Londonderry, we are an independently owned coffee shop/bistro and
+  outside caterers. Since opening in February 2007 we have placed ourseleves
+  at the forefront of the city’s emerging cafe culture
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://cafezest.net" # the base hostname & protocol for your site
+twitter_username: knagurski
+github_username:  knagurski
+assets: "/assets"
+
+# Build settings
+markdown: kramdown
+exclude: [bower.json, .bowerrc, gulpfile.js, node_modules, package.json]
